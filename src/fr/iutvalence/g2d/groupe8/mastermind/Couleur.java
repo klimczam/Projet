@@ -1,6 +1,6 @@
 package fr.iutvalence.g2d.groupe8.mastermind;
 
-public class Couleurs {
+public class Couleur {
 	
 	/**
 	 * Les couleurs des combinaisons et des indices
@@ -17,7 +17,5 @@ public class Couleurs {
 	public static final int BlancIndice = 12;
 	public static final int vide = 0;
 	
-
-
 
 }

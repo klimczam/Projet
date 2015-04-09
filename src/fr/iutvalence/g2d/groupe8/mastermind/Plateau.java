@@ -15,19 +15,18 @@ public class Plateau {
 	/**
 	 * 
 	 */
-	private Cases[][] cases;
+	private Case[][] cases;
 	
 	/**
 	 * 
 	 */
-	
 	public Plateau(){
 	
-		this.cases= new Cases[NOMBRE_DE_COLONNES][NOMBRE_DE_LIGNES];
+		this.cases = new Case[NOMBRE_DE_COLONNES][NOMBRE_DE_LIGNES];
 		
-		for (int i=0; i<NOMBRE_DE_COLONNES; i++ ){
-			for (int j=0; j<NOMBRE_DE_LIGNES; j++){
-				cases[i][j] = new  Cases(Couleurs.vide);
+		for (int i=0; i < NOMBRE_DE_COLONNES; i++ ){
+			for (int j = 0; j < NOMBRE_DE_LIGNES; j++){
+				cases[i][j] = new Case(Couleur.vide);
 			}
 		}
 	}
