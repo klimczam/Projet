@@ -1,38 +1,28 @@
 package fr.iutvalence.g2d.groupe8.mastermind;
 
+/* TODO JAVADOC. */
 public class Plateau {
-	
-	/**
-	 * On initialise le nombre de lignes
-	 */
-	private final int NOMBRE_DE_LIGNES = 8;
-	
-	/**
-	 * On initialise le nombre de colonnes
-	 */
-	private final int NOMBRE_DE_COLONNES = 4;
-	
-	/**
-	 * 
-	 */
-	private Case[][] cases;
-	
-	/**
-	 * 
-	 */
-	public Plateau(){
-	
-		this.cases = new Case[NOMBRE_DE_COLONNES][NOMBRE_DE_LIGNES];
-		
-		for (int i=0; i < NOMBRE_DE_COLONNES; i++ ){
-			for (int j = 0; j < NOMBRE_DE_LIGNES; j++){
-				cases[i][j] = new Case(Couleur.vide);
-			}
-		}
-	}
-	
-	public static void main(String[] args){
-		System.out.println(new Plateau());
-	}
+    /** Nombre de lignes. */
+    private final int NOMBRE_DE_LIGNES   = 8;
+    /** Nombre de colonnes. */
+    private final int NOMBRE_DE_COLONNES = 4;
+    /* TODO JAVADOC. */
+    private Case[][] cases;
 
+    /* TODO JAVADOC. */
+    public Plateau() {
+        this.cases = new Case[NOMBRE_DE_COLONNES][NOMBRE_DE_LIGNES];
+        for (int i = 0; i < NOMBRE_DE_COLONNES; i++) {
+            for (int j = 0; j < NOMBRE_DE_LIGNES; j++) {
+                /* TODO Pourquoi ne pas initialiser directement à vide ? */
+                cases[i][j] = new Case(Couleur.vide);
+            }
+        }
+    }
+
+    /* TODO JAVADOC. */
+    /* TODO Faites une classe dédiée plutôt. */
+    public static void main(String[] args) {
+        System.out.println(new Plateau());
+    }
 }
