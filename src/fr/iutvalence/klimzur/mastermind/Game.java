@@ -1,15 +1,13 @@
-/**
- * 
- */
 package fr.iutvalence.klimzur.mastermind;
 
-/**
- * @author klimczam
- *
- */
+/* TODO JAVADOC. */
 public class Game {
-	private Board board;
-	private Player player1;
-	private Player player2;
-	private int round;
+    /* TODO JAVADOC. */
+    private Board  board;
+    /* TODO JAVADOC. */
+    private Player player1;
+    /* TODO JAVADOC. */
+    private Player player2;
+    /* TODO JAVADOC. */
+    private int    round;
 }
