@@ -25,12 +25,17 @@ public enum Color {
     /* TODO JAVADOC. */
     private final String display;
 
-    /* TODO JAVADOC. */
+    /**
+     * Allow to display the color
+     * @param disp
+     */
     Color(final String disp) {
         display = disp;
     }
 
-    /* TODO JAVADOC. */
+    /**
+     * Display the color
+     */
     @Override
     public String toString() {
         return display;
