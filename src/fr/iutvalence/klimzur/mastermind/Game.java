@@ -1,6 +1,6 @@
 package fr.iutvalence.klimzur.mastermind;
 
-public class Game extends Board {
+public class Game {
     /**
      * The board displays
      */
@@ -64,38 +64,15 @@ public class Game extends Board {
     public Color[] getSecret(){
     	return this.secret;
     }
-    
-    public Color[][] PlacementCouleur(){
-    	for (int i = 0; i < NOMBRE_DE_LIGNES; i++) {
-            for (int j = 0; j < NOMBRE_DE_COLONNES; j++) {
-                this.cases[i][j] = Color.BLACK;
-            }         
-        }
-    	for (int k=0; k<round+1; k++){
-    		for (int e=0; e < NOMBRE_DE_COLONNES; e++){
-    			this.cases[k][e]=this.proposition[e];
-    		}
-        }
-    	return this.cases;
-    }
-    
-    /**
-     * Display the game
-     */
-    @Override
-    public String toString() {
-    	String plateauAsciiArt = "";
-    	plateauAsciiArt += "Round : " + round + "\n";
-    	plateauAsciiArt += "Nom du joueur : " + this.player1.name + "\n";
-    	PlacementCouleur();
-        for (int numeroDeLigne = 0; numeroDeLigne < NOMBRE_DE_LIGNES; numeroDeLigne++) {
-            for (int numeroDeColonne = 0; numeroDeColonne < NOMBRE_DE_COLONNES; numeroDeColonne++) {
-                plateauAsciiArt += this.cases[numeroDeLigne][numeroDeColonne] + " ";
-            }
-            plateauAsciiArt += "\n";
-        }
-        plateauAsciiArt += verification();
-        return plateauAsciiArt;
-    }
+
+
+
+	public void play() {
+		System.out.println(this.board);
+		/*while(true){
+			// If gagner, break;
+		}*/
+		
+	}
 
 }

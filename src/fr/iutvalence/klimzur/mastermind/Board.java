@@ -9,12 +9,12 @@ package fr.iutvalence.klimzur.mastermind;
 public class Board {
     /* TODO Translate. */
     /** Nombre de lignes. */
-    protected final int NOMBRE_DE_LIGNES   = 8;
+    private final int NOMBRE_DE_LIGNES   = 8;
     /* TODO Translate. */
     /** Nombre de colonnes. */
-    protected final int NOMBRE_DE_COLONNES = 4;
+    private final int NOMBRE_DE_COLONNES = 4;
     /* TODO JAVADOC */
-    protected Color[][] cases;
+    private Color[][] cases;
 
     /** Create an empty board. */
     public Board() {
@@ -26,5 +26,29 @@ public class Board {
         }
     }
 
+    
+    public Color[] getCases(int numeroDeLigne) {
+		return cases[numeroDeLigne];
+	}
+
+	public void setCases(Color[][] cases) {
+		this.cases = cases;
+	}
+
+
+	/**
+     * Display the game
+     */
+    @Override
+    public String toString() {
+    	String plateauAsciiArt = "";
+        for (int numeroDeLigne = 0; numeroDeLigne < NOMBRE_DE_LIGNES; numeroDeLigne++) {
+            for (int numeroDeColonne = 0; numeroDeColonne < NOMBRE_DE_COLONNES; numeroDeColonne++) {
+                plateauAsciiArt += this.cases[numeroDeLigne][numeroDeColonne] + " ";
+            }
+            plateauAsciiArt += "\n";
+        }
+        return plateauAsciiArt;
+    }
 
 }

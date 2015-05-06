@@ -30,7 +30,7 @@ public enum Color {
      * @param disp
      */
     Color(final String disp) {
-        display = disp;
+        this.display = disp;
     }
 
     /**
@@ -38,6 +38,6 @@ public enum Color {
      */
     @Override
     public String toString() {
-        return display;
+        return this.display;
     }
 }
