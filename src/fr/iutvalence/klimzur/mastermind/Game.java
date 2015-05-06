@@ -1,5 +1,8 @@
 package fr.iutvalence.klimzur.mastermind;
 
+import java.util.Iterator;
+import java.util.Scanner;
+
 public class Game {
     /**
      * The board displays
@@ -68,6 +71,18 @@ public class Game {
 
 
 	public void play() {
+		System.out.println(this.board);
+		Scanner sc = new Scanner(System.in);
+		
+		for (int i = 0; i < proposition.length; i++) {
+			System.out.println("Entrez votre couleur: ");
+			String str = sc.nextLine();
+			if ( str.equals("BLUE")){
+				this.proposition[i]=Color.BLUE;
+			}
+			this.board.setCases(round, i, this.proposition[i]);
+		}
+		
 		System.out.println(this.board);
 		/*while(true){
 			// If gagner, break;

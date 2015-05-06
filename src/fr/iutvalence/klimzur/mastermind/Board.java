@@ -31,8 +31,8 @@ public class Board {
 		return cases[numeroDeLigne];
 	}
 
-	public void setCases(Color[][] cases) {
-		this.cases = cases;
+	public void setCases(int numLigne, int numColonne, Color cases) {
+		this.cases[numLigne][numColonne] = cases;
 	}
 
 
