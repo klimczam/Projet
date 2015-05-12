@@ -1,6 +1,8 @@
 package fr.iutvalence.klimzur.mastermind;
 
-/* TODO JAVADOC. */
+/**
+ *  All colors of the game 
+ */
 public enum Color {
     /** The color red. */
     RED("RED"),
@@ -22,7 +24,10 @@ public enum Color {
     BLACK("BLA"),
     /** The color white. */
     WHITE("WHI");
-    /* TODO JAVADOC. */
+    
+    /**
+     * String which display  
+     */
     private final String display;
 
     /**
