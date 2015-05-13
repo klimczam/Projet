@@ -49,17 +49,17 @@ public class Game {
 	public void play() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Player1 put your secret :");
-		this.secret = Putyourcolor();
+		this.secret = Putyourcolor(0);
 		
 		System.out.println("There are the different color which can you choose : Blue, Green, Yellow, Orange, Red, Cyan, Brown, Pink \n");
 		System.out.println("Player : " + player1.name);
 		System.out.println(this.board);
 		
 		boolean win = false;
-		for (int round = 0; round < NUMBER_OF_ROUND; round++) {
-			System.out.println("Round : " + (round + 1));
+		for (int round = 1; round < NUMBER_OF_ROUND+1; round++) {
+			System.out.println("Round : " + (round));
 			
-			Color[] guess = Putyourcolor();
+			Color[] guess = Putyourcolor(round);
 			
 			System.out.println(this.board);
 			String victory = verification(guess);
@@ -79,7 +79,7 @@ public class Game {
 
 	}
 	
-	private Color[] Putyourcolor() {
+	private Color[] Putyourcolor(int round) {
 		Scanner sc = new Scanner(System.in);
 		int i = 0;
 		Color[] guess = new Color[4];
@@ -88,7 +88,8 @@ public class Game {
 			String str = sc.nextLine();
 			try {
 				guess[i] = stringToColor(str);
-				this.board.setCases(round, i, guess[i]);
+				if (round!=0)
+					this.board.setCases(round-1, i, guess[i]);
 			}
 			catch (InvalidExceptions e) {
 				//e.printStackTrace();
