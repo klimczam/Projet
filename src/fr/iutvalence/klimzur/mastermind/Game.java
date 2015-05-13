@@ -48,7 +48,7 @@ public class Game {
 	 */
 	public void play() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Player1 put your secret :");
+		System.out.println("Put your secret :");
 		this.secret = Putyourcolor();
 		
 		System.out.println("There are the different color which can you choose : Blue, Green, Yellow, Orange, Red, Cyan, Brown, Pink \n");
@@ -87,8 +87,9 @@ public class Game {
 			System.out.println("Put your color " + (i+1) +" : ");
 			String str = sc.nextLine();
 			try {
-				guess[i] = stringToColor(str);
+				guess[i] = stringToColor(str); 
 				this.board.setCases(round, i, guess[i]);
+				
 			}
 			catch (InvalidExceptions e) {
 				//e.printStackTrace();
