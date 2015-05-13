@@ -8,10 +8,10 @@ package fr.iutvalence.klimzur.mastermind;
  */
 public class Board {
     /** Number of line */
-    private final int NUMBER_OF_LINE   = 8;
+    private final int NOMBRE_DE_LIGNES   = 8;
     
     /** Number of column */
-    private final int NUMBER_OF_COLUMN = 4;
+    private final int NOMBRE_DE_COLONNES = 4;
    
     /**
      * to draw every case of the board
@@ -20,9 +20,9 @@ public class Board {
 
     /** Create an empty board. */
     public Board() {
-        this.cases = new Color[NUMBER_OF_LINE][NUMBER_OF_COLUMN];
-        for (int i = 0; i < NUMBER_OF_LINE; i++) {
-            for (int j = 0; j < NUMBER_OF_COLUMN; j++) {
+        this.cases = new Color[NOMBRE_DE_LIGNES][NOMBRE_DE_COLONNES];
+        for (int i = 0; i < NOMBRE_DE_LIGNES; i++) {
+            for (int j = 0; j < NOMBRE_DE_COLONNES; j++) {
                 this.cases[i][j] = Color.BLACK;
             }
         }
@@ -54,8 +54,8 @@ public class Board {
     @Override
     public String toString() {
     	String plateauAsciiArt = "";
-        for (int numeroDeLigne = 0; numeroDeLigne < NUMBER_OF_LINE; numeroDeLigne++) {
-            for (int numeroDeColonne = 0; numeroDeColonne < NUMBER_OF_COLUMN; numeroDeColonne++) {
+        for (int numeroDeLigne = 0; numeroDeLigne < NOMBRE_DE_LIGNES; numeroDeLigne++) {
+            for (int numeroDeColonne = 0; numeroDeColonne < NOMBRE_DE_COLONNES; numeroDeColonne++) {
                 plateauAsciiArt += this.cases[numeroDeLigne][numeroDeColonne] + " ";
             }
             plateauAsciiArt += "\n";
