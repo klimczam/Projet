@@ -4,7 +4,6 @@ package fr.iutvalence.klimzur.mastermind;
  * Game's board.
  *
  * @author Zurchert
- * @version TODO
  */
 public class Board {
     /** Number of line */
