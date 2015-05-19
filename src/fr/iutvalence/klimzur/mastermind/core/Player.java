@@ -1,4 +1,4 @@
-package fr.iutvalence.klimzur.mastermind;
+package fr.iutvalence.klimzur.mastermind.core;
 
 /**
  * Player who plays the party

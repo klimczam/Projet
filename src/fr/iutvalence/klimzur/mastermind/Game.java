@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Scanner;
 
-import fr.iut.valence.exceptions.InvalidExceptions;
+import fr.iutvalence.klimzur.mastermind.core.Board;
+import fr.iutvalence.klimzur.mastermind.core.Color;
+import fr.iutvalence.klimzur.mastermind.core.Player;
+import fr.iutvalence.klimzur.mastermind.exceptions.InvalidExceptions;
 /**
  * Class which can start the game
  * */

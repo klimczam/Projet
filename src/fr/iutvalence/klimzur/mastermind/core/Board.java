@@ -1,4 +1,5 @@
-package fr.iutvalence.klimzur.mastermind;
+package fr.iutvalence.klimzur.mastermind.core;
+
 
 /**
  * Game's board.

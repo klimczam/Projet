@@ -1,4 +1,4 @@
-package fr.iut.valence.exceptions;
+package fr.iutvalence.klimzur.mastermind.exceptions;
 
 public class InvalidExceptions extends Exception {
 	

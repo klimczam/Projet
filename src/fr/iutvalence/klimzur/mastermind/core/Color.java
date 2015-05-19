@@ -1,4 +1,4 @@
-package fr.iutvalence.klimzur.mastermind;
+package fr.iutvalence.klimzur.mastermind.core;
 
 /**
  *  All colors of the game 

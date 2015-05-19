@@ -1,3 +1,4 @@
+package fr.iutvalence.klimzur.mastermind.core;
 //package fr.iutvalence.klimzur.mastermind;
 //
 //public class Case {
