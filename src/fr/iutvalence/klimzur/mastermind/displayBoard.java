@@ -1,6 +1,7 @@
 package fr.iutvalence.klimzur.mastermind;
 
 import fr.iutvalence.klimzur.mastermind.ihm.IHM;
+import fr.iutvalence.klimzur.mastermind.ihm.IHM_Board;
 
 public class displayBoard {
     /**
