@@ -12,8 +12,8 @@ public enum Color {
     BLUE("BLU"),
     /** The color yellow. */
     YELLOW("YEL"),
-    /** The color brown. */
-    BROWN("BRO"),
+    /** The color gray. */
+    GRAY("GRA"),
     /** The color orange. */
     ORANGE("ORA"),
     /** The color pink. */

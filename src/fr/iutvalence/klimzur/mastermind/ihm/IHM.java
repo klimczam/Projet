@@ -19,7 +19,7 @@ public class IHM extends JFrame{
 		frame.setTitle("Mastermind");
 		frame.setSize(800, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		IHM_Board board = new IHM_Board();
+		IHMBoard board = new IHMBoard();
 		frame.getContentPane().add(board);
 		
 		
